@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.maingrid{
+    max-width: 500px;
+    width: 100%;
+    aspect-ratio: 1;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+}
+
+.colorbtn{
+    width: 100%;
+    aspect-ratio: 1;
+    border: 1px solid black;
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* viewport width */
+    height: 100vh; /* viewport height */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.map{
+    width: 200px;
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    position: relative;
+}
+
+.marker{
+    width: 10px;
+    aspect-ratio: 1/1;
+    background: black;
+    position: absolute;
+}
+
+
+.desserts{
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+    img{ width: 100%; }
+    h2{ font-size: 1.1rem; color: gray; }
+}
